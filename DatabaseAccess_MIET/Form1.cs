@@ -213,6 +213,12 @@ namespace DatabaseAccess_MIET
 
             _parametrForm.Show();
         }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            listView1.Clear();
+            Get_Tables("MSysObjects");
+        }
     }
 }
 
