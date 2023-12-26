@@ -14,7 +14,7 @@ namespace DatabaseAccess_MIET
 {
     public partial class DeleteForm : Form
     {
-        private const string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source = D:\proga\StudentsAccessDB.accdb";
+        private const string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source = D:\proga\LR7.accdb";
 
         private string _nameTable;
         public DeleteForm(string nameTable)

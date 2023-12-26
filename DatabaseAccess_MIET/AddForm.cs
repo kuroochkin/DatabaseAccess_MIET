@@ -78,7 +78,7 @@ namespace DatabaseAccess_MIET
                 //Запрос на добавление данных в БД
                 string query = $"INSERT INTO [{_nameTable}] ({columns}) VALUES ({values})";
 
-                string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\proga\StudentsAccessDB.accdb";
+                string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\proga\LR7.accdb";
 
                 using (OleDbConnection connection = new OleDbConnection(connectionString))
                 {

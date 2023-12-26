@@ -30,25 +30,25 @@ namespace DatabaseAccess_MIET
             Get_Tables(_сurrentTable);
         }
 
-        //Факультет
+        //Группы
         private void button5_Click(object sender, EventArgs e)
         {
             listView1.Clear();
-            _сurrentTable = "Факультет";
+            _сurrentTable = "Группы";
         }
 
-        //Виды родственников
+        //Предметы
         private void button6_Click(object sender, EventArgs e)
         {
             listView1.Clear();
-            _сurrentTable = "Виды родственников";
+            _сurrentTable = "Предмет";
         }
 
-        //Группа
+        //Семестры
         private void button4_Click(object sender, EventArgs e)
         {
             listView1.Clear();
-            _сurrentTable = "Группа";
+            _сurrentTable = "Семестр";
         }
 
         //Студенты
@@ -58,32 +58,18 @@ namespace DatabaseAccess_MIET
             _сurrentTable = "Студенты";
         }
 
-        //Льгота
+        //Текущая успеваемость
         private void button3_Click(object sender, EventArgs e)
         {
             listView1.Clear();
-            _сurrentTable = "Льгота";
+            _сurrentTable = "Текущая успеваемость";
         }
 
-        //Родственники студентов
+        //Факультеты
         private void button7_Click(object sender, EventArgs e)
         {
             listView1.Clear();
-            _сurrentTable = "Родственники студентов";
-        }
-
-        //Льгота_Студент
-        private void button8_Click(object sender, EventArgs e)
-        {
-            listView1.Clear();
-            _сurrentTable = "Льгота_Студент";
-        }
-
-        //Родственник_Студент
-        private void button9_Click(object sender, EventArgs e)
-        {
-            listView1.Clear();
-            _сurrentTable = "Родственник_Студент";
+            _сurrentTable = "Факультеты";
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -140,58 +126,58 @@ namespace DatabaseAccess_MIET
             _updateForm.Show();
         }
 
-        //Количество студентов разного пола
+        //Количество студентов во всех группах
         private void button13_Click(object sender, EventArgs e)
         {
-            string query = "EXEC SQL7";
+            string query = "EXEC [Количество студентов во всех группах]";
             DrawProcedure(query);
         }
 
-        //Студенты женского пола
+        //Среднее количество недель в каждом семестре
         private void button14_Click(object sender, EventArgs e)
         {
-            string query = "EXEC [Студенты женского пола]";
+            string query = "EXEC [Средние количество недель в каждом семестре]";
             DrawProcedure(query);
         }
 
-        //Самый младший студент
+        //Факультеты [Полноя имя] - [Короткое имя]
         private void button15_Click(object sender, EventArgs e)
         {
-            string query = "EXEC [Самый младший студент]";
+            string query = "EXEC [Факультеты Запрос]";
             DrawProcedure(query);
         }
 
-        //Добавление дяди в виды родственников
+        //Добавление группы 4587
         private void button16_Click(object sender, EventArgs e)
         {
-            string query = "EXEC [Добавление дяди в виды родственников]";
+            string query = "EXEC [Добавление группы 4587]";
             DrawProcedure(query);
 
-            MessageBox.Show($"Дядя добавлен в базу данных");
+            MessageBox.Show($"Группа 4587 успешно добавлена");
         }
 
-        //Обновление названия факультета (Биохимический)
+        //Обновление проживания для девушек
         private void button17_Click(object sender, EventArgs e)
         {
-            string query = "EXEC [Обновление названия факультета]";
+            string query = "EXEC [Обновление проживания для девушек]";
             DrawProcedure(query);
 
-            MessageBox.Show($"Факультет теперь биохимический");
+            MessageBox.Show($"Теперь девушки не живут в общежитии");
         }
 
-        // Удаление факультетов без деканата
+        // Удаление студентов женского пола
         private void button18_Click(object sender, EventArgs e)
         {
-            string query = "EXEC [Удаление факультетов без деканата]";
+            string query = "EXEC [Удаление студентов женского пола";
             DrawProcedure(query);
 
-            MessageBox.Show($"Факультетов без деканата теперь нет");
+            MessageBox.Show($"Теперь студентов женского пола нет");
         }
 
         //Запрос с параметром пола у студентов
         private void button19_Click(object sender, EventArgs e)
         {
-            string query = "EXEC [Запрос с параметром пола у студентов]";
+            string query = "EXEC [Выбор студента по полу]";
             var _parametrForm = new ParametrForm(query);
 
             _parametrForm.Show();
@@ -208,7 +194,7 @@ namespace DatabaseAccess_MIET
 
         private void button21_Click(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM Группа WHERE НомерГруппы =";
+            string query = "SELECT * FROM Группы WHERE НомерГруппы =";
             var _parametrForm = new ParametrForm(query);
 
             _parametrForm.Show();
