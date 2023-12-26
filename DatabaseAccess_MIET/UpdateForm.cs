@@ -21,7 +21,7 @@ namespace DatabaseAccess_MIET
 
         TableLayoutPanel tableLayoutPanel;
 
-        private const string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source = D:\proga\StudentsAccessDB.accdb";
+        private const string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source = D:\proga\LR7.accdb";
 
         public UpdateForm(DataTable columnsInfo, string nameTable)
         {
@@ -79,7 +79,7 @@ namespace DatabaseAccess_MIET
                 if(recordId is null)
                     throw new NullReferenceException(nameof(recordId));
 
-                LoadData(recordId);
+                //LoadData(recordId);
 
                 // Проверяем, что Id не пусто
                 if (!string.IsNullOrEmpty(recordId))

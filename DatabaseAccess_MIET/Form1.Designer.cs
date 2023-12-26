@@ -28,10 +28,10 @@ namespace DatabaseAccess_MIET
         //string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\proga\StudentsAccessDB.accdb";
 
         string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; 
-                                   Data Source=D:\proga\StudentsAccessDB.accdb; 
+                                   Data Source=D:\proga\LR7.accdb; 
                                    JET OLEDB:System Database=true;
                                    JET OLEDB:System Database=C:\Users\pin11\AppData\Roaming\Microsoft\Access\System.mdw";
-        
+
 
         public void Get_Tables(string nameTable)
         {
@@ -238,10 +238,10 @@ namespace DatabaseAccess_MIET
             // 
             // button1
             // 
-            button1.Location = new Point(478, 360);
+            button1.Location = new Point(12, 461);
             button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(312, 61);
+            button1.Size = new Size(263, 61);
             button1.TabIndex = 0;
             button1.Text = "Вывести данные из выбранной таблицы";
             button1.UseVisualStyleBackColor = true;
@@ -250,16 +250,16 @@ namespace DatabaseAccess_MIET
             // 
             // listView1
             // 
-            listView1.Location = new Point(35, 41);
+            listView1.Location = new Point(12, 157);
             listView1.Margin = new Padding(3, 4, 3, 4);
             listView1.Name = "listView1";
-            listView1.Size = new Size(754, 296);
+            listView1.Size = new Size(1111, 296);
             listView1.TabIndex = 1;
             listView1.UseCompatibleStateImageBehavior = false;
             // 
             // button2
             // 
-            button2.Location = new Point(797, 41);
+            button2.Location = new Point(936, 461);
             button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
             button2.Size = new Size(187, 31);
@@ -270,87 +270,79 @@ namespace DatabaseAccess_MIET
             // 
             // button3
             // 
-            button3.Location = new Point(797, 80);
+            button3.Location = new Point(936, 539);
             button3.Margin = new Padding(3, 4, 3, 4);
             button3.Name = "button3";
             button3.Size = new Size(187, 31);
             button3.TabIndex = 3;
-            button3.Text = "Льгота\r\n";
+            button3.Text = "Текущая успеваемость\r\n";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
             // button4
             // 
-            button4.Location = new Point(797, 119);
+            button4.Location = new Point(936, 500);
             button4.Margin = new Padding(3, 4, 3, 4);
             button4.Name = "button4";
             button4.Size = new Size(187, 31);
             button4.TabIndex = 4;
-            button4.Text = "Группа";
+            button4.Text = "Семестры";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
             // button5
             // 
-            button5.Location = new Point(797, 157);
+            button5.Location = new Point(936, 578);
             button5.Margin = new Padding(3, 4, 3, 4);
             button5.Name = "button5";
             button5.Size = new Size(187, 31);
             button5.TabIndex = 5;
-            button5.Text = "Факультет";
+            button5.Text = "Группы";
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
             // 
             // button6
             // 
-            button6.Location = new Point(797, 196);
+            button6.Location = new Point(936, 617);
             button6.Margin = new Padding(3, 4, 3, 4);
             button6.Name = "button6";
             button6.Size = new Size(187, 29);
             button6.TabIndex = 6;
-            button6.Text = "Виды родственников";
+            button6.Text = "Предметы";
             button6.UseVisualStyleBackColor = true;
             button6.Click += button6_Click;
             // 
             // button7
             // 
-            button7.Location = new Point(797, 233);
+            button7.Location = new Point(936, 654);
             button7.Margin = new Padding(3, 4, 3, 4);
             button7.Name = "button7";
             button7.Size = new Size(187, 31);
             button7.TabIndex = 7;
-            button7.Text = "Родственники студентов";
+            button7.Text = "Факультеты";
             button7.UseVisualStyleBackColor = true;
             button7.Click += button7_Click;
             // 
             // button8
             // 
-            button8.Location = new Point(797, 272);
-            button8.Margin = new Padding(3, 4, 3, 4);
+            button8.Location = new Point(0, 0);
             button8.Name = "button8";
-            button8.Size = new Size(187, 31);
-            button8.TabIndex = 8;
-            button8.Text = "Льгота_Студент";
-            button8.UseVisualStyleBackColor = true;
-            button8.Click += button8_Click;
+            button8.Size = new Size(75, 23);
+            button8.TabIndex = 24;
             // 
             // button9
             // 
-            button9.Location = new Point(797, 311);
-            button9.Margin = new Padding(3, 4, 3, 4);
+            button9.Location = new Point(0, 0);
             button9.Name = "button9";
-            button9.Size = new Size(187, 31);
-            button9.TabIndex = 9;
-            button9.Text = "Родственник_Студент";
-            button9.UseVisualStyleBackColor = true;
-            button9.Click += button9_Click;
+            button9.Size = new Size(75, 23);
+            button9.TabIndex = 23;
             // 
             // button10
             // 
-            button10.Location = new Point(477, 429);
+            button10.Location = new Point(281, 461);
             button10.Margin = new Padding(3, 4, 3, 4);
             button10.Name = "button10";
-            button10.Size = new Size(312, 61);
+            button10.Size = new Size(265, 61);
             button10.TabIndex = 10;
             button10.Text = "Удалить строку по ИД в выбранной таблице";
             button10.UseVisualStyleBackColor = true;
@@ -358,10 +350,10 @@ namespace DatabaseAccess_MIET
             // 
             // button11
             // 
-            button11.Location = new Point(477, 500);
+            button11.Location = new Point(12, 530);
             button11.Margin = new Padding(3, 4, 3, 4);
             button11.Name = "button11";
-            button11.Size = new Size(312, 61);
+            button11.Size = new Size(263, 61);
             button11.TabIndex = 11;
             button11.Text = "Добавить строку в выбранной таблице";
             button11.UseVisualStyleBackColor = true;
@@ -369,83 +361,83 @@ namespace DatabaseAccess_MIET
             // 
             // button12
             // 
-            button12.Location = new Point(477, 569);
+            button12.Location = new Point(281, 530);
             button12.Margin = new Padding(3, 4, 3, 4);
             button12.Name = "button12";
-            button12.Size = new Size(312, 61);
+            button12.Size = new Size(265, 61);
             button12.TabIndex = 12;
             button12.Text = "Обновить данные в выбранной таблице";
             button12.UseVisualStyleBackColor = true;
             // 
             // button13
             // 
-            button13.Location = new Point(35, 360);
+            button13.Location = new Point(12, 30);
             button13.Margin = new Padding(3, 4, 3, 4);
             button13.Name = "button13";
             button13.Size = new Size(368, 31);
             button13.TabIndex = 13;
-            button13.Text = "Количество студентов разного пола";
+            button13.Text = "Количество студентов во всех группах";
             button13.UseVisualStyleBackColor = true;
             button13.Click += button13_Click;
             // 
             // button14
             // 
-            button14.Location = new Point(35, 399);
+            button14.Location = new Point(12, 108);
             button14.Margin = new Padding(3, 4, 3, 4);
             button14.Name = "button14";
             button14.Size = new Size(368, 31);
             button14.TabIndex = 14;
-            button14.Text = "Студенты женского пола";
+            button14.Text = "Средние количество недель в каждом семестре";
             button14.UseVisualStyleBackColor = true;
             button14.Click += button14_Click;
             // 
             // button15
             // 
-            button15.Location = new Point(35, 437);
+            button15.Location = new Point(12, 69);
             button15.Margin = new Padding(3, 4, 3, 4);
             button15.Name = "button15";
             button15.Size = new Size(368, 31);
             button15.TabIndex = 15;
-            button15.Text = "Самый младший студент";
+            button15.Text = "Факультеты, ПолноеИмя - КороткоеИмя";
             button15.UseVisualStyleBackColor = true;
             button15.Click += button15_Click;
             // 
             // button16
             // 
-            button16.Location = new Point(35, 476);
+            button16.Location = new Point(386, 69);
             button16.Margin = new Padding(3, 4, 3, 4);
             button16.Name = "button16";
             button16.Size = new Size(368, 31);
             button16.TabIndex = 16;
-            button16.Text = "Добавление дяди в виды родственников";
+            button16.Text = "Добавление группы 4587";
             button16.UseVisualStyleBackColor = true;
             button16.Click += button16_Click;
             // 
             // button17
             // 
-            button17.Location = new Point(35, 515);
+            button17.Location = new Point(386, 30);
             button17.Margin = new Padding(3, 4, 3, 4);
             button17.Name = "button17";
             button17.Size = new Size(368, 31);
             button17.TabIndex = 17;
-            button17.Text = "Обновление названия факультета (Биологический)";
+            button17.Text = "Обновление проживания для девушек";
             button17.UseVisualStyleBackColor = true;
             button17.Click += button17_Click;
             // 
             // button18
             // 
-            button18.Location = new Point(35, 553);
+            button18.Location = new Point(386, 108);
             button18.Margin = new Padding(3, 4, 3, 4);
             button18.Name = "button18";
             button18.Size = new Size(368, 31);
             button18.TabIndex = 18;
-            button18.Text = "Удаление факультетов без деканата";
+            button18.Text = "Удаление студентов женского пола";
             button18.UseVisualStyleBackColor = true;
             button18.Click += button18_Click;
             // 
             // button19
             // 
-            button19.Location = new Point(35, 592);
+            button19.Location = new Point(765, 30);
             button19.Margin = new Padding(3, 4, 3, 4);
             button19.Name = "button19";
             button19.Size = new Size(368, 31);
@@ -456,7 +448,7 @@ namespace DatabaseAccess_MIET
             // 
             // button20
             // 
-            button20.Location = new Point(35, 632);
+            button20.Location = new Point(765, 69);
             button20.Margin = new Padding(3, 4, 3, 4);
             button20.Name = "button20";
             button20.Size = new Size(368, 31);
@@ -467,7 +459,7 @@ namespace DatabaseAccess_MIET
             // 
             // button21
             // 
-            button21.Location = new Point(35, 672);
+            button21.Location = new Point(765, 108);
             button21.Margin = new Padding(3, 4, 3, 4);
             button21.Name = "button21";
             button21.Size = new Size(368, 31);
@@ -478,7 +470,7 @@ namespace DatabaseAccess_MIET
             // 
             // button22
             // 
-            button22.Location = new Point(683, 651);
+            button22.Location = new Point(12, 636);
             button22.Name = "button22";
             button22.Size = new Size(311, 52);
             button22.TabIndex = 22;
@@ -490,8 +482,8 @@ namespace DatabaseAccess_MIET
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(255, 224, 192);
-            ClientSize = new Size(1006, 719);
+            BackColor = Color.FromArgb(192, 192, 255);
+            ClientSize = new Size(1135, 719);
             Controls.Add(button22);
             Controls.Add(button21);
             Controls.Add(button20);
